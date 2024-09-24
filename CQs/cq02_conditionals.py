@@ -1,4 +1,4 @@
-"""Take a number and compare it against a secre number"""
+"""Take a number and compare it against a secret number"""
 
 __author__: str = "730481718"
 
