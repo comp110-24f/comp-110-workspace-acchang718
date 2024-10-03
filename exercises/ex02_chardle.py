@@ -37,7 +37,10 @@ def contains_char(word: str, letter: str) -> None:
         if word[index] == letter:
             print(letter + " found at index " + str(index))
             index += 1
-            count += 1  # checking to see if letter is found at specific index in the word. If yes then +1 is added to the instance counter
+            count += (
+                1  # checking to see if letter is found at specific index in the word.
+            )
+            # If yes then +1 is added to the instance counter
         else:
             index += 1
     if count == 0:
