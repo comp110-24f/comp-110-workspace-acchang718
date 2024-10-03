@@ -4,28 +4,28 @@ __author__: str = "730481718"
 
 
 def main(secret: str) -> None:
-    turns: int = len(secret) + 1
+    turns: int = 6
     idx: int = 0
     while idx < turns:  # iterate through all the letters in the word
-        print("=== Turn " + str(idx + 1) + "/" + str(turns) + " ===")
-        input: str = input_guess(turns - 1)  # get input from function input_guess
+        print("=== Turn " + str(idx + 1) + "/6 ===")
+        input: str = input_guess(len(secret))  # get input from function input_guess
         # assigns it to a variable to use in other functions
         print(emojified(input, secret))  # print the boxes
         if input == secret:  # win condition
-            print("You got it in " + str(idx + 1) + "/" + str(turns) + " turns!")
+            print("You won in " + str(idx + 1) + "/6 turns!")
             return
         idx += 1
     else:  # when you run out of guesses
-        print("X/" + str(turns) + " - Sorry, try again tomorrow!")
-        quit()
+        print("X/6 - Sorry, try again tomorrow!")
+        return
 
 
 def input_guess(num_char: int) -> str:
-    word: str = input("Enter a " + str(num_char) + " character word: ")
+    word: str = input("Enter a " + str(num_char) + " character word:")
     while (
         len(word) != num_char
     ):  # make sure that the words are the same length as the secret
-        word = input("That wasn't " + str(num_char) + " chars! Try again: ")
+        word = input("That wasn't " + str(num_char) + " chars! Try again:")
     else:
         return word
 
@@ -74,4 +74,4 @@ def emojified(guess: str, secret_word: str) -> str:
 
 
 if __name__ == "__main__":
-    main(secret="codes")
+    main(secret="annabelle")
