@@ -22,3 +22,12 @@ index: int = 0
 while index < len(display):
     print(display[index])
     index += 1
+
+"""For loop practice"""
+pets: list[str] = ["Louie", "Bo", "Bear"]
+for x in pets:
+    print("Good boy, {x}!")
+
+names: list[str] = ["Alyssa", "Janet", "Vrinda"]
+for idx in range(0, len(names)):
+    print("{idx}: {names[idx]}")
