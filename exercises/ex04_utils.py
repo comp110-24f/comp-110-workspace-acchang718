@@ -21,8 +21,8 @@ def max(num_list: list[int]) -> int:
         max_num: int = 0
         for idx in num_list:
             if abs(idx) > max_num:
-                max_num = idx  # Replaces max_num with the highest encountered number in the list
-        return max_num
+                max_num = idx  # Replaces max_num with the highest
+        return max_num  # encountered number in the list
 
 
 def is_equal(list_One: list[int], list_Two: list[int]) -> bool:
@@ -35,8 +35,8 @@ def is_equal(list_One: list[int], list_Two: list[int]) -> bool:
     else:
         while index < len(list_One):  # if they are the same length, then continue
             if list_One[index] == list_Two[index]:
-                occurance += 1  # Again, checks the number of instances to see if elements between two lists are the same
-                index += 1
+                occurance += 1  # Again, checks the number of instances to
+                index += 1  # see if elements between two lists are the same
             else:
                 index += 1
         if occurance < len(list_One):
