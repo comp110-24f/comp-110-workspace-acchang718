@@ -1,4 +1,4 @@
-"""EX03 - Utilizing Lists"""
+"""EX04 - Utilizing Lists"""
 
 __author__: str = "730481718"
 
